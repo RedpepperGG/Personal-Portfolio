@@ -1,0 +1,149 @@
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Apply animations to elements */
+.logo {
+  animation: fadeIn 1s ease;
+}
+
+.nav-links {
+  animation: fadeIn 1s ease 0.2s;
+  animation-fill-mode: both;
+}
+
+.section-title {
+  animation: fadeInUp 1s ease;
+}
+
+.about-text {
+  animation: fadeInLeft 1s ease;
+}
+
+.about-img-container {
+  animation: fadeInRight 1s ease;
+}
+
+.project-card {
+  animation: fadeInUp 0.8s ease;
+  animation-fill-mode: both;
+}
+
+.project-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.project-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.project-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.project-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.contact-info {
+  animation: fadeInLeft 1s ease;
+}
+
+.contact-form {
+  animation: fadeInRight 1s ease;
+}
+
+.shape {
+  animation: float 6s ease-in-out infinite;
+}
+
+.shape:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.shape:nth-child(3) {
+  animation-delay: 2s;
+}

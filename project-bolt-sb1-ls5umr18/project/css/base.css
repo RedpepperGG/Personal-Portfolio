@@ -1,0 +1,158 @@
+/* Base Styles */
+body {
+  font-family: var(--font-primary);
+  background-color: var(--light);
+  color: var(--secondary);
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+.section {
+  padding: var(--spacing-4xl) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.highlight {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: var(--spacing-md);
+}
+
+h1 {
+  font-size: var(--font-size-5xl);
+}
+
+h2 {
+  font-size: var(--font-size-4xl);
+}
+
+h3 {
+  font-size: var(--font-size-3xl);
+}
+
+h4 {
+  font-size: var(--font-size-2xl);
+}
+
+h5 {
+  font-size: var(--font-size-xl);
+}
+
+h6 {
+  font-size: var(--font-size-lg);
+}
+
+p {
+  margin-bottom: var(--spacing-md);
+}
+
+.section-title {
+  font-size: var(--font-size-4xl);
+  margin-bottom: var(--spacing-2xl);
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 50%;
+  height: 4px;
+  background-color: var(--primary);
+  border-radius: var(--border-radius-sm);
+}
+
+.text-center .section-title::after {
+  left: 25%;
+}
+
+/* Links */
+a {
+  color: var(--primary);
+  transition: color var(--transition-normal);
+}
+
+a:hover {
+  color: var(--primary-dark);
+}
+
+/* Shapes */
+.shape {
+  position: absolute;
+  z-index: var(--z-negative);
+  border-radius: var(--border-radius-full);
+}
+
+.shape-1 {
+  width: 300px;
+  height: 300px;
+  background-color: var(--primary-transparent);
+  top: -150px;
+  right: -150px;
+}
+
+.shape-2 {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(249, 115, 22, 0.1);
+  bottom: 100px;
+  left: -100px;
+}
+
+.shape-3 {
+  width: 150px;
+  height: 150px;
+  background-color: rgba(16, 185, 129, 0.1);
+  bottom: -75px;
+  right: 10%;
+}
+
+.shape-4 {
+  width: 250px;
+  height: 250px;
+  background-color: var(--primary-transparent);
+  top: 10%;
+  left: -125px;
+}
+
+.shape-5 {
+  width: 180px;
+  height: 180px;
+  background-color: rgba(249, 115, 22, 0.1);
+  bottom: 15%;
+  right: -90px;
+}
+
+.shape-6 {
+  width: 220px;
+  height: 220px;
+  background-color: rgba(16, 185, 129, 0.1);
+  top: 10%;
+  right: -110px;
+}
+
+.shape-7 {
+  width: 180px;
+  height: 180px;
+  background-color: var(--primary-transparent);
+  bottom: -90px;
+  left: 15%;
+}
